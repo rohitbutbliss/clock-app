@@ -1,8 +1,15 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
 #clock {
   background-image: url("./pngwing.com.png");
   background-size: calc(100%) calc(100%);
-  width: 400px;
-  height: 400px;
+  /* width: 400px; */
+  height: 80%;
+  aspect-ratio: 1/1;
+  margin: auto;
   position: relative;
 }
 .hand {
