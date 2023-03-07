@@ -1,6 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   width: 100vw;
   height: 100vh;
+  box-sizing: border-box;
   display: grid;
   place-items: center;
 }
@@ -15,7 +20,7 @@ body {
   width: 80%;
 }
 .desktop-screen {
-  height: 80% !important;
+  height: 80%;
 }
 .hand {
   position: absolute;
