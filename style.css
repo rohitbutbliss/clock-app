@@ -1,0 +1,29 @@
+#clock {
+  background-image: url("pngwing.com.png");
+  background-size: calc(100%) calc(100%);
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+.hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: translate(-50%, -100%);
+}
+#hour {
+  width: 8px;
+  height: 28%;
+  background-color: black;
+}
+#minute {
+  width: 5px;
+  height: 35%;
+  background-color: black;
+}
+#second {
+  width: 2px;
+  height: 40%;
+  background-color: black;
+}
