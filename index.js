@@ -7,11 +7,11 @@ const hourHand = document.getElementById("hour");
 const minuteHand = document.getElementById("minute");
 const secondHand = document.getElementById("second");
 
-let totalSeconds = hours * 3600 + minutes * 60 + seconds;
+let totalSeconds = (hours * 3600 + minutes * 60 + seconds) % 43200;
 
-let hourDeg = (1 / 120) * totalSeconds;
-let minuteDeg = (1 / 10) * totalSeconds;
-let secondDeg = 6 * totalSeconds;
+let hourDeg = ((1 / 120) * totalSeconds) % 360;
+let minuteDeg = ((1 / 10) * totalSeconds) % 360;
+let secondDeg = (6 * totalSeconds) % 360;
 
 hourHand.style.transform = `translate(-50%, -100%) rotate(${hourDeg}deg)`;
 minuteHand.style.transform = `translate(-50%, -100%) rotate(${minuteDeg}deg)`;
