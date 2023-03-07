@@ -1,5 +1,5 @@
 #clock {
-  background-image: url("pngwing.com.png");
+  background-image: url("./pngwing.com.png");
   background-size: calc(100%) calc(100%);
   width: 400px;
   height: 400px;
