@@ -16,12 +16,24 @@ body {
   margin: auto;
   position: relative;
 }
-.mobile-screen {
-  width: 80%;
-}
+
 .desktop-screen {
   height: 80%;
 }
+
+.mobile-screen {
+  width: 80%;
+}
+.mobile-screen > #hour {
+  width: 4px;
+}
+.mobile-screen > #minute {
+  width: 2.5px;
+}
+.mobile-screen > #second {
+  width: 1px;
+}
+
 .hand {
   position: absolute;
   top: 50%;
